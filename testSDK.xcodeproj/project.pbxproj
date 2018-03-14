@@ -15,6 +15,7 @@
 		CD6A970A2057B89700646C3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6A97092057B89700646C3F /* main.m */; };
 		CD6A97142057B89800646C3F /* testSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6A97132057B89800646C3F /* testSDKTests.m */; };
 		CD6A971F2057B89800646C3F /* testSDKUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6A971E2057B89800646C3F /* testSDKUITests.m */; };
+		CD6A99D02057D8EF00646C3F /* RDPFramwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6A99CF2057D8EF00646C3F /* RDPFramwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CD6A972E2057B96E00646C3F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		CD6A96F72057B89700646C3F /* testSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6A96FA2057B89700646C3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +64,7 @@
 		CD6A971A2057B89800646C3F /* testSDKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testSDKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6A971E2057B89800646C3F /* testSDKUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testSDKUITests.m; sourceTree = "<group>"; };
 		CD6A97202057B89800646C3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD6A99CF2057D8EF00646C3F /* RDPFramwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RDPFramwork.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6A99D02057D8EF00646C3F /* RDPFramwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +121,7 @@
 				CD6A96FD2057B89700646C3F /* ViewController.h */,
 				CD6A96FE2057B89700646C3F /* ViewController.m */,
 				CD6A97002057B89700646C3F /* Main.storyboard */,
+				CD6A99CF2057D8EF00646C3F /* RDPFramwork.framework */,
 				CD6A97032057B89700646C3F /* Assets.xcassets */,
 				CD6A97052057B89700646C3F /* LaunchScreen.storyboard */,
 				CD6A97082057B89700646C3F /* Info.plist */,
@@ -142,6 +158,7 @@
 				CD6A96F32057B89700646C3F /* Sources */,
 				CD6A96F42057B89700646C3F /* Frameworks */,
 				CD6A96F52057B89700646C3F /* Resources */,
+				CD6A972E2057B96E00646C3F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -431,6 +448,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/testSDK",
+				);
 				INFOPLIST_FILE = testSDK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Emuzi.testSDK;
@@ -444,6 +465,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/testSDK",
+				);
 				INFOPLIST_FILE = testSDK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Emuzi.testSDK;

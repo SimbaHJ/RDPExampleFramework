@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "RDPFramwork.framework/Headers/RDPSDK.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    RDPDirectAPI *api =[[RDPDirectAPI alloc] initWithDelegate:self];
+    [api startRequest];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
